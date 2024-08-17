@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="EcoGoods - Discover Sustainable Products for a Greener Future." />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>EcoGoods | Sustainable Products for a Greener Future</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">Eco<span>Goods</span>.</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn sign__up">Sign Up</button>
+        <button class="btn sign__in">Sign In</button>
+      </div>
+    </nav>
+    <header class="header__container">
+      <div class="header__image">
+        <img src="assets/p1.jpg" alt="Eco-Friendly Products" />
+      </div>
+      <div class="header__content">
+        <h1>WELCOME TO <span>EcoGoods</span></h1>
+        <p>
+          Discover Our Range of Eco-Friendly Products Designed to Help You Live a Sustainable Lifestyle. From Reusable Essentials to Organic Goods, Find Everything You Need for a Greener Future.
+        </p>
+        <form action="/">
+          <div class="input__row">
+            <div class="input__group">
+              <h5>Product Search</h5>
+              <div>
+                <span><i class="ri-search-line"></i></span>
+                <input type="text" placeholder="Search for eco-friendly products..." />
+              </div>
+            </div>
+          </div>
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+    <section id="contact">
+      <div class="contact__container">
+        <h2>Contact Us</h2>
+        <form action="#">
+          <div class="input__group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="input__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="input__group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    
+    <script>
+      document.querySelector('a[href="#contact"]').addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector('#contact').scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    </script>
+    
+  </body>
+</html>
